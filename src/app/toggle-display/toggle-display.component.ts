@@ -7,6 +7,7 @@ const STYLE_INDEX = 4;
   templateUrl: './toggle-display.component.html',
   styleUrls: ['./toggle-display.component.css']
 })
+
 export class ToggleDisplayComponent implements OnInit {
   displayPassword = true;
   timestamps = [];
@@ -23,7 +24,7 @@ export class ToggleDisplayComponent implements OnInit {
     return index > STYLE_INDEX ? 'blue' : 'white';
   }
 
-  makeWhiteColor(index: number) {
+  assignWhiteColor(index: number) {
     return index > STYLE_INDEX;
   }
 }
