@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="onDisplayDetailsClick()">Display Details</button>
+<p *ngIf="displayPassword">Secret Password = tuna</p>
+
+<ul>
+  <li
+    *ngFor="let timestamp of timestamps; let i = index;"
+    [ngStyle]="{ backgroundColor: getBackgroundColor(i) }"
+    [ngClass]="{ white: makeWhiteColor(i) }"
+  >{{ timestamp }} {{ i }}</li>
+</ul>
