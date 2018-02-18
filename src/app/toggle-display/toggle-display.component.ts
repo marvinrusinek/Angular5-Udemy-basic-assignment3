@@ -21,10 +21,10 @@ export class ToggleDisplayComponent implements OnInit {
   }
 
   getBackgroundColor(index: number) {
-    return index > STYLE_INDEX ? 'blue' : 'white';
+    return index >= STYLE_INDEX ? 'blue' : 'white';
   }
 
   assignWhiteColor(index: number) {
-    return index > STYLE_INDEX;
+    return index >= STYLE_INDEX;
   }
 }
